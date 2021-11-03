@@ -1,0 +1,14 @@
+BEGIN
+    INPUT average 
+    IF average >= 75
+       Display "A"
+    ELSE IF average >= 60
+       Display "B"
+    ELSE IF average >= 45
+       Display "C"
+    ELSE IF average >=35
+       Display "D"
+    ELSE
+       Display "E"
+    END IF
+END

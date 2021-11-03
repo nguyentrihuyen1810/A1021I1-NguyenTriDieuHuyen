@@ -1,0 +1,6 @@
+BEGIN
+    INPUT n
+    INPUT $1 = 23000 VND
+    VND = n * 23000
+    Display VND
+END
