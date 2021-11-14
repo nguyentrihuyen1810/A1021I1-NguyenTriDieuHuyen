@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm trung bình và tổng</title>
+</head>
+<body>
+    <button type="button" onclick="Tinh();">Nhấn vào để nhập điểm</button>
+    <script>
+        function Tinh()
+        {
+            let a = prompt("Nhậo điểm môn Vật Lý");
+            let b = prompt("Nhập điểm môn Hóa học");
+            let c = prompt("Nhâp điểm môn Sinh học");
+            var Tinh = (parseInt(a) + parseInt(b) + parseInt(c))/3;
+            document.write("Điểm trung bình củ 3 môn: " + Tinh);
+
+            var Tinh = parseInt(a) + parseInt(b) + parseInt(c)
+            document.write("Tổng điểm 3 môn: " + Tinh);
+        }
+    </script>
+</body>
+</html>
