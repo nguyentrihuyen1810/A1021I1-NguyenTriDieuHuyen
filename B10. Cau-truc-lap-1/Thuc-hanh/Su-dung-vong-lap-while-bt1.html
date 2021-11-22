@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập vào một số, việc nhập kết thúc khi nhập vào giá trị -1. Tính tổng các số vừa nhập</title>
+</head>
+<body>
+    <script>
+        let num = 0;
+        let total = 0;
+        while (num != -1)
+        {
+            num = parseInt(prompt("Enter a number"));
+            alert(num);
+            if (num != -1){
+                break;
+            }
+            total += num;
+        }
+        document.write(total);
+    </script>
+</body>
+</html>
