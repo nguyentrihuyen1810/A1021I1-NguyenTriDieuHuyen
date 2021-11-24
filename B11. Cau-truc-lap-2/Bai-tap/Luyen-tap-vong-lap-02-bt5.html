@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi suất ngân hàng</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập số tiền cần gửi"));
+        let b = parseFloat(prompt("Nhập mức lãi suất"));
+        let c = parseFloat(prompt("Nhập sô tháng cần gửi"));
+        let i = 0;
+        let tienlai;
+        let tongtien;
+        do {
+            tienlai = (a * ((b/100)/360) * (c * 30));
+            tongtien = a + tienlai;
+            i++
+        } while (i <= c)
+        document.write("Số tiền lãi sau " + c +  " tháng là: " + tienlai + "<br>");
+        document.write("Số tiền nhận được (cả tiền gửi và tiền lãi) sau " + c + " tháng là: " + tongtien + "VND");
+
+    </script>
+</body>
+</html>

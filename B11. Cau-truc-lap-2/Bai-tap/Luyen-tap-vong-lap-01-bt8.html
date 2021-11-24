@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+    <input type="button" value="CHƠI" onclick="play()">
+    <script>
+        function play(){
+            let from = parseInt(prompt("Bắt đầu ở số:"));
+            let to = parseInt(prompt("Kết thúc ở số:"));
+            let numberCom = Math.floor(Math.random()*(to-from+1)+from);
+            let pass = false;
+            let numberUser;
+            for (let i = 0; i < 3 && !pass; i++) {
+                numberUser = parseInt(prompt("Nhập số:"));
+                if (numberUser === numberCom){
+                    alert("Chiến thắng");
+                    pass = true;
+                } else {
+                    if (numberUser < numberCom) {
+                        alert("Số bạn nhập bé hơn");
+                        pass = false;
+                    } else {
+                        alert("Số bạn nhập lớn hơn");
+                        pass = false;
+                    }
+                }
+            }
+            if (!pass) {
+                alert("THUA CUỘC");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số ngày trong một tháng</title>
+</head>
+<body>
+    <input type="text" id="thang" size="20">;
+    <button type="button" onclick="Thang()" >Tính số ngày</button>
+    <label for='' id="ngay"></label>
+    <br>
+    <script>
+        function Thang()
+        {
+            let thang = parseInt(document.getElementById('thang').value);
+            switch (thang) {
+                case 2:
+                    document.getElementById("ngay").innerHTML="Tháng 2 có 28 ngày. Vào năm nhuận thì tháng 2 có 29 ngày"
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                    document.getElementById("ngay").innerHTML="Tháng " + thang + "có 31 ngày."
+                    break
+                default:
+                    document.getElementById("ngay").innerHTML="Tháng " + thang + "có 30 ngày."
+            }
+        }
+    </script>
+</body>
+</html>
