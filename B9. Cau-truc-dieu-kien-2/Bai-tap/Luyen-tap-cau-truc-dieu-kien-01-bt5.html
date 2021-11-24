@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập điểm bài kiểm tra"));
+        let b = parseInt(prompt("Nhập điểm thi giữa kì"));
+        let c = parseInt(prompt("Nhập điểm thi cuối kì"));
+        let hocluc = (a +(b*2)+(c*3))/6;
+        if (hocluc >= 8)
+        {
+            document.write("Học lực giỏi");
+        } else if (hocluc < 8 && hocluc >= 6.5)
+        {
+            document.write("Học lực khấ");
+        } else if (hocluc < 6.5 && hocluc >= 5)
+        {
+            document.write("Học lực trung bình");
+        } else
+        {
+            document.write("Học lực yếu");
+        }
+        document.write();
+    </script>
+</body>
+</html>

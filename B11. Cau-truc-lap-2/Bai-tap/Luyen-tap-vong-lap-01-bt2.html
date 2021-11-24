@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập nhiệt độ"));
+        while(a > 100)
+        {
+            document.write("Cần giảm nhiệt độ");
+            break;
+        }
+        while(a < 20)
+        {
+            document.write("Cần tăng nhiệt độ");
+            break;
+        }
+    </script>
+</body>
+</html>

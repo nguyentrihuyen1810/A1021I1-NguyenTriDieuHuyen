@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập vào số tiền lương"));
+        let hoahong;
+        if (a < 400000000)
+        {
+            document.write("Không có tiền hoa hồng");
+        } else if (a >= 400000000 && a < 600000000)
+        {
+            hoahong = (a * 1 / 100);
+            document.write("Số tiền hoa hồng nhận đuọc: " + hoahong);
+        } else if (a >= 600000000 && a < 800000000)
+        {
+            hoahong = (a * 1,5 % 100);1
+            document.write("Số tiền hoa hồng nhận được: " + hoahong);
+        } else if (a >= 800000000)
+        {
+            hoahong= (a * 2 / 100);
+            document.write("Số tiền hoa hồng nhận được: " + hoahong);
+        } else
+        {
+            hoahong= (a * 3/ 100);
+            document.write("Số tiền hoa hồng nhận được: " + hoahong);
+        }
+    </script>
+</body>
+</html>

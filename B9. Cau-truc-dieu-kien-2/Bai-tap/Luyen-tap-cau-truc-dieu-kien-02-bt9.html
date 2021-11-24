@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 số thực nhập vào có phải là cạnh của một tam giác</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập cạnh a"));
+        let b = parseFloat(prompt("Nhập cạnh b"));
+        let c = parseFloat(prompt("Nhập cạnh c"));
+        let tong1 = (a+b);
+        let tong2 = (b+c);
+        let tong3 = (a+c);
+        if (a>0 && b>0 && c>0)
+        {
+            if (tong1 > c && tong2 > a && tong3 > b)
+            {
+                document.write("Các số vừa nhập là cạnh của tam giác");
+            } else
+            {
+                document.write("Các số vừa nhập không phải là cạnh của tam giác");
+            }
+        } else
+        {
+            document.write("Độ dài các cạnh không phù hợp với điều kiện");
+        }
+    </script>
+</body>
+</html>
