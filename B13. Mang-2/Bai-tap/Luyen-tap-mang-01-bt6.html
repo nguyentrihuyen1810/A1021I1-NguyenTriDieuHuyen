@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm xem V có nằm trong mảng số nguyên không?</title>
+</head>
+<body>
+    <script>
+        let array = new Array(10);
+        for(let index = 0; index <  array.length; index++){
+            let numbers = parseInt(prompt("Nhap so nguyen tai index = " + index));
+            array[index] = numbers;
+        }
+        for(let value of array){
+            document.write(value + " ");
+        }
+        let v = parseInt(prompt("Nhap so nguyen V "));
+        let indexV = array.indexOf(v);
+        if (indexV !== -1)
+        {
+            alert(v + " is in the array");
+        } else {
+            alert(v + " is not in the array");
+        }
+    </script>
+</body>
+</html>

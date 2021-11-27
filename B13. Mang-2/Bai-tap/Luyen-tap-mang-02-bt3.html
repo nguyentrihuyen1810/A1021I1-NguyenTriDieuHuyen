@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số ký tự số trong mảng. </title>
+</head>
+<body>
+    <script>
+        let array = ['6', '17', 'F', 'X', '2', '15', '10', '7', 'Z', '8'];
+        document.write("Kích thước của mảng: " + array.length + "<br>");
+        let dem = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (isNaN(array[i])) {
+                dem++;
+            }
+        }
+        document.write("Số ký tự có trong mảng: " + dem);
+    </script>
+</body>
+</html>

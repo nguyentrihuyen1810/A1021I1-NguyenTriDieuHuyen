@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</title>
+</head>
+<body>
+    <script>
+        let array = [48, 4, 30, 23, 26, 6, 36, 13, 12, 11];
+        let dem = 0;
+        for (i = 0; i < array.length; i++) {
+            if (array[i] >= 10) {
+                dem++
+            }
+        }
+        document.write("Có tất cả " + dem + " số nguyên lớn hơn hoặc bằng 10");
+    </script>
+</body>
+</html>

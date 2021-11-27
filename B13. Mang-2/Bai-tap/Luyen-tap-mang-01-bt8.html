@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</title>
+</head>
+<body>
+    <script>
+        let array = new Array (10);
+        for(i = 0; i < 10; i++){
+            let numbers = parseInt(prompt('Nhập vào mảng các số nguyên'));
+            array[i]= numbers;
+        }
+        array.sort(function(a,b){
+            return(b-a);
+        })
+        document.write(array);
+    </script>
+</body>
+</html>

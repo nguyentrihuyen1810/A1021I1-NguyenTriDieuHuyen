@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng</title>
+</head>
+<body>
+    <script>
+        let array = new Array(10);
+        for(let index = 0; index < array.length; index++) {
+            let numbers = parseInt(prompt("Nhập số nguyên tại index = " + index));
+            array[index] = numbers;
+        }
+        document.write("Dãy số đã được nhập vào mảng: " + array + "<br>");
+        document.write("Dãy số sau khi đảo ngược: " + array.reverse());
+    </script>
+</body>
+</html>

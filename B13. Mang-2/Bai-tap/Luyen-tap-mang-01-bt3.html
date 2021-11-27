@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển  giá trị lớn nhất trong mảng. In ra giá trị trung bình của các phần tử trong mảng.</title>
+</head>
+<body>
+    <script>
+        let array = [41, 25, 39, 45, 11, 18, 17, 24, 23, 8];
+        let max = array[0];
+        let index = 0;
+        for (let i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+                index = i;
+            }
+        }
+        document.write("Số lớn nhất trong mảng:" + max + "<br>");
+        let average = 0;
+        let sum = 0;
+        for (let i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+        average = sum/array.length;
+        document.write("Trung bình các phần tử trong mảng: " + average);
+    </script>
+</body>
+</html>
