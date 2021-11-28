@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )</title>
+</head>
+<body>
+    <script>
+        let string = [];
+        let kytu = prompt('Nhập ký tự để tạo mảng').split('');
+        string = kytu;
+        for(let i = 0 ; i < string.length; i++){
+            if(string[i] === '-'){
+                string[i] = '_';
+            }
+        }
+        document.write(string.join(''));
+    </script>
+</body>
+</html>

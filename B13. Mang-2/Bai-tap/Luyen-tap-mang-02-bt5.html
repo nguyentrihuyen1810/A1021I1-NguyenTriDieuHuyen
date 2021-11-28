@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra xem hai chuỗi có giống nhau hay không</title>
+</head>
+<body>
+    <script>
+        let array1 = ['pink', 'blue', '8', 'đỏ', 'trắng'];
+        let array2 = ['white', '5', 'cam', 'hồng', 'blue'];
+        let dem = 0;
+        for (let i = 0; i < array1.length; i++) {
+            for (let j = 0; j < array2.length; j++) {
+                if (array1[i] === array2[j]) {
+                    dem++;
+                }
+            }
+        }
+        document.write("Số ký tự giống nhau của hai mảng là: " + dem);
+    </script>
+</body>
+</html>
