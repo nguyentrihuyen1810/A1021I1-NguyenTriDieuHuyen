@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hiện đổi chỗ hai số nguyên</title>
+</head>
+<body>
+    <script>
+        function hoandoi() {
+            let number1 = parseInt(prompt("Nhập sô nguyên thứ nhất"));
+            let number2 = parseInt(prompt("Nhập sô nguyên thứ hai"));
+            [number1, number2] = [number2, number1];
+            alert([number1, number2]);
+        }
+        hoandoi()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. Nếu số thứ nhất nhỏ hơn hoặc bằng số thứ hai, trả về tổng hai tham số.</title>
+</head>
+<body>
+    <script>
+        function check() {
+            let number1 = parseInt(prompt("Nhập số nguyên thứ nhất"));
+            let number2 = parseInt(prompt("Nhập số nguyên thứ hai"));
+            let sum = number1 + number2 ;
+            if (number1 > number2) {
+                alert(number1 + " lớn hơn " + number2)
+            } else {
+                alert("Tổng hai tham số: " + sum);
+            }
+        }
+        check()
+    </script>
+</body>
+</html>

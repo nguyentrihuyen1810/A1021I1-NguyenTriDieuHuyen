@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+    <script>
+        function isPrime(number) {
+            let check = true;
+            if (number < 2) {
+                check = false;
+            } else {
+                for (let i = 2; i < number - 1; i++) {
+                    if (number % 1 == 0) {
+                        check = false;
+                        break;
+                    }
+                }
+            }
+            if (check == true) {
+                document.write(number + " là số nguyên tố");
+            } else {
+                document.write(number + " không phải là số nguyên tố");
+            }
+        }
+        isPrime(9);
+    </script>
+</body>
+</html>

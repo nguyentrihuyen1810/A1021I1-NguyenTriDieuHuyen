@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.</title>
+</head>
+<body>
+    <script>
+        function check() {
+            let a = parseInt(prompt("Nhập vào một số nguyên"));
+            if (Number.isInteger(a)) {
+                alert("True");
+            } else {
+                alert("False");
+            }
+        }
+        check()
+    </script>
+</body>
+</html>
