@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng mô tả lớp Hình chữ nhật</title>
+</head>
+<body>
+    <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+        var canvas = document.getElementById("DemoCanvas");
+        if (canvas.getContext)
+        {
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle='#fa4b2a';    // color of fill
+            ctx.fillRect(10, 40, 500, 200); // create rectangle
+        }
+        function Rectangle (chieudai, chieurong, chuvi, dientich) {
+            var chieudai = chieudai;
+            var chieurong = chieurong;
+            var chuvi = chuvi;
+            var dientich = dientich;
+
+            this.chuvi = function() {
+                chuvi = (chieudai + chieurong) * 2;
+                alert("Chu vi hình chữ nhật: " + chuvi);
+            }
+            this.dientich = function() {
+                dientich = (chieudai * chieurong);
+                alert("Diện tích hình chữ nhật: " + dientich);
+            }
+        }
+        let HCN = new Rectangle(50,25);
+        HCN.chuvi();
+        HCN.dientich();
+
+        function Rectangle1 (chieudai1, chieurong1, chuvi1, dientich1) {
+            var chieudai1 = chieudai1;
+            var chieurong1 = chieurong1;
+            var chuvi1 = chuvi1;
+            var dientich1 = dientich1;
+
+            this.chuvi1 = function() {
+                chuvi1 = (chieudai1 + chieurong1) * 2;
+                alert("Chu vi hình chữ nhật: " + chuvi1);
+            }
+            this.dientich1 = function() {
+                dientich1 = (chieudai1 * chieurong1);
+                alert("Diện tích hình chữ nhật: " + dientich1);
+            }
+        }
+        let HCN1 = new Rectangle1(85,36);
+        HCN1.chuvi1();
+        HCN1.dientich1();
+    </script>
+</body>
+</html>

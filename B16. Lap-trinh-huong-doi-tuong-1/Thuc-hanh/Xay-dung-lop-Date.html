@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dụng lớp Date</title>
+</head>
+<body>
+    <script>
+        class MyDate {
+            constructor(day, month, year) {
+                this.day = day;
+                this.month = month;
+                this. year = year;
+            }
+            getDay() {
+                return this.day;
+            }
+            getMonth() {
+                return this.month;
+            }
+            getYear() {
+                return this.year;
+            }
+            setDay(day) {
+                this.day = day;
+            }
+            setMonth(month) {
+                this.month = month;
+            }
+            setYear(year) {
+                this.year = year;
+            }
+        }
+        let date = new MyDate(3, 12, 2021);
+        let day = date.getDay();
+        let month = date.getMonth();
+        let year = date.getYear();
+        alert(day + "/" + month + "/" + year);
+
+        date.setDay(22);
+        date.setMonth(7);
+        date.setYear(2018);
+
+        let day2 = date.getDay();
+        let month2 = date.getMonth();
+        let year2 = date.year;
+        alert(day2 + "/" + month2 + "/" + year2);
+    </script>
+</body>
+</html>
